@@ -9,3 +9,5 @@ gem 'mongoid'
 gem 'bson_ext'
 
 gem 'pry'
+
+gem 'clockwork'

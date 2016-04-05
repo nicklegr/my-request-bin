@@ -1,5 +1,5 @@
 production:
-  clients:
+  sessions:
     default:
       database: main
       hosts:

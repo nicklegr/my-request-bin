@@ -14,8 +14,6 @@ clockwork:
   command: bundle exec clockwork clockwork.rb
   links:
     - mongodb
-  ports:
-    - "80:80"
   # restart: always
 
 mongodb:
