@@ -15,4 +15,3 @@ COPY . /usr/src/app
 # ONBUILD --
 
 EXPOSE 80
-CMD bash run.sh
