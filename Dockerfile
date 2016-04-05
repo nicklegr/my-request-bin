@@ -1,4 +1,4 @@
-FROM ruby:2.2.1
+FROM ruby:2.2.4
 
 RUN echo "Asia/Tokyo" > /etc/timezone
 RUN dpkg-reconfigure -f noninteractive tzdata
