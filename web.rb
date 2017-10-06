@@ -3,8 +3,14 @@
 require "bundler"
 Bundler.require
 
-require_relative "db"
+require "pp"
 
 get "/" do
-  slim :index
+  http_headers = request.env.select { |k, v| k.start_with?('HTTP_')}
+  http_headers.each do |k, v|
+    k =~ /HTTP_(.+)/
+    puts "#{$1}: #{v}"
+  end
+
+  "OK"
 end
