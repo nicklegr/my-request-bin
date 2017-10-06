@@ -11,6 +11,7 @@ get "/" do
     k =~ /HTTP_(.+)/
     puts "#{$1}: #{v}"
   end
+  STDOUT.flush
 
   "OK"
 end
