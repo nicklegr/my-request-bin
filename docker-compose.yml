@@ -1,24 +1,8 @@
 web:
   build: .
   command: bundle exec ruby web.rb -o 0.0.0.0 -p 80
-  links:
-    - mongodb
   ports:
     - "80:80"
   # environment:
   #   VIRTUAL_HOST: hoge.example.com
   # restart: always
-
-clockwork:
-  build: .
-  command: bundle exec clockwork clockwork.rb
-  links:
-    - mongodb
-  # restart: always
-
-mongodb:
-  image: mongo
-  command: mongod --smallfiles
-  # restart: always
-  # volumes:
-  #   - ./mongodb:/data/db
